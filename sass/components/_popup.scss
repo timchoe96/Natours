@@ -30,10 +30,9 @@
     @include respond(tab-land) {
       display: block;
     }
-    @include respond(tab-phone) {
-      height: 100%;
+    @include respond(phone) {
+      height: 450px;
       overflow: scroll;
-      width: 100%;
     }
   }
   &__left {
@@ -43,6 +42,9 @@
     @include respond(tab-land) {
       display: block;
       width: 100%;
+    }
+    @include respond(phone) {
+      display: none;
     }
   }
   &__right {
